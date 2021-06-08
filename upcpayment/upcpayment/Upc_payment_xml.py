@@ -63,14 +63,14 @@ def _add_invoice_with_data(parent_element, order_id, date, total_amount, currenc
 def _add_card_with_data(parent_element, card_num, exp_year, exp_month, cv_num, tavv):
     Card = etree.SubElement(parent_element, 'Card')
     CardNum = etree.SubElement(Card, 'CardNum')
-    CardNum.text = self.card_num
+    CardNum.text = card_num
     ExpYear = etree.SubElement(Card, 'ExpYear')
-    ExpYear.text = self.exp_year
+    ExpYear.text = exp_year
     ExpMonth = etree.SubElement(Card, 'ExpMonth')
-    ExpMonth.text = self.exp_month
+    ExpMonth.text = exp_month
     if cv_num:
         CVNum = etree.SubElement(Card, 'CVNum')
-        CVNum.text = self.cv_num
+        CVNum.text = cv_num
     if tavv:
         ExtDataToken = etree.SubElement(Card, 'ExtDataToken')
         TAVV = etree.SubElement(ExtDataToken, 'TAVV')

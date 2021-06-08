@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='upcpayment',  
-    version='0.5.5.7.8.1',
+    version='0.5.5.7.8.3',
     author="Valentyn Ishchenko",
     author_email="xalikxalik44@gmail.com",
     description="Library for upc services",
